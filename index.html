@@ -1,0 +1,44 @@
+<!-- Do not try to copy this code -->
+<!-- Code brought and verified. Brought by Peter Wancel -->
+<!-- Serious allegations may apply in case of any violation of the above law -->
+<!-- Buy this code with suitable permission from the developer. -->
+<!-- Made by Flipper Cupid -->
+<!DOCTYPE html><html><head>
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="./p5.play.js"></script>
+    <script src=”https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js”>
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    
+  </head>
+  <body>
+  <video autoplay muted id="myVideo">
+      <source src="introvid.mp4" type="video/mp4">
+    </video>
+    <div id="other">
+
+      <p> Select time zone :</p>&nbsp;&nbsp;&nbsp;&nbsp; <a href="Berlin/index.html" style="text-decoration : none; font-size:25px;"> < </a> &nbsp;&nbsp;
+      <a href="#" style="text-decoration : none; font-size:20px; font-weight:bold;" class='text-center'>New York</a>&nbsp;&nbsp;
+      <a href="London/index.html" style="text-decoration : none; font-size:25px;"> > </a>
+
+       <script src="sketch.js"></script> 
+  
+    </div>
+    <script>
+      var vid=document.getElementById('myVideo');
+      vid.addEventListener("ended", hideVideo, false);
+  
+      function hideVideo() {
+          var vid=document.getElementById('myVideo');
+          var other=document.getElementById('other');
+          vid.removeEventListener("ended", hideVideo, false);
+          vid.style.display='none';
+         
+      }
+  </script>
+</body>
+</html>
+<!-- Made by Flipper Cupid -->
